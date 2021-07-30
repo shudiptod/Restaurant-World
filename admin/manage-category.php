@@ -3,8 +3,8 @@
 <div class="main-content">
     <div class="wrapper">
         <h1>Manage Category</h1>
-
-        <br /><br />
+        <hr>
+        <br />
         <?php 
         
             if(isset($_SESSION['add']))
@@ -52,13 +52,13 @@
         ?>
         <br><br>
 
-                <!-- Button to Add Admin -->
+                <!-- Button to Add category -->
                 <a href="<?php echo SITEURL; ?>admin/add-category.php" class="btn-primary">Add Category</a>
 
                 <br /><br /><br />
 
                 <table class="tbl-full">
-                    <tr>
+                    <tr class="manage-category">
                         <th>S.N.</th>
                         <th>Title</th>
                         <th>Image</th>
@@ -96,7 +96,7 @@
 
                                 ?>
 
-                                    <tr>
+                                    <tr class="manage-category">
                                         <td><?php echo $sn++; ?>. </td>
                                         <td><?php echo $title; ?></td>
 
@@ -125,8 +125,8 @@
                                         <td><?php echo $featured; ?></td>
                                         <td><?php echo $active; ?></td>
                                         <td>
-                                            <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>" class="btn-secondary">Update Category</a>
-                                            <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Category</a>
+                                            <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>" class="btn-secondary space">Update Category</a>
+                                            <a  href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger space">Delete Category</a>
                                         </td>
                                     </tr>
 

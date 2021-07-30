@@ -39,10 +39,10 @@
                 //Count Rows
                 $count = mysqli_num_rows($res);
 
-                //Check whether food available of not
+                //Check whether food available or not
                 if($count>0)
                 {
-                    //Food Available
+                    //Food is Available
                     while($row=mysqli_fetch_assoc($res))
                     {
                         //Get the details

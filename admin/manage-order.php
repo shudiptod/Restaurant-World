@@ -3,8 +3,8 @@
 <div class="main-content">
     <div class="wrapper">
         <h1>Manage Order</h1>
-
-                <br /><br /><br />
+        <hr>
+        <br />
 
                 <?php 
                     if(isset($_SESSION['update']))
@@ -17,7 +17,7 @@
 
                
                 <table class="tbl-full">
-                    <tr>
+                    <tr class="manager-order">
                         <th>S.N.</th>
                         <th>Food</th>
                         <th>Price</th>
@@ -62,7 +62,7 @@
                                 
                                 ?>
 
-                                    <tr>
+                                    <tr  class="manager-order">
                                         <td><?php echo $sn++; ?>. </td>
                                         <td><?php echo $food; ?></td>
                                         <td><?php echo $price; ?></td>
@@ -76,7 +76,7 @@
 
                                                 if($status=="Ordered")
                                                 {
-                                                    echo "<label>$status</label>";
+                                                    echo "<label style='color: #062250;'>$status</label>";
                                                 }
                                                 elseif($status=="On Delivery")
                                                 {

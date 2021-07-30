@@ -19,7 +19,7 @@
     <!-- footer Section Starts Here -->
     <section class="footer">
         <div class="container text-center">
-            <p>All rights reserved.Designed By <a href="#">Shudipto and Avijit and Samian</a></p>
+            <p>All rights reserved.Designed By <a href="https://shudiptas-portfolio.netlify.app/">Shudipto and Avijit and Samian</a></p>
         </div>
     </section>
     <!-- footer Section Ends Here -->

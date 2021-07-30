@@ -39,7 +39,7 @@
         }
     ?>
 
-    <!-- fOOD sEARCH Section Starts Here -->
+    <!-- fOOD order Section Starts Here -->
     <section class="food-search">
         <div class="container">
             
@@ -87,7 +87,7 @@
                 <fieldset>
                     <legend>Delivery Details</legend>
                     <div class="order-label">Full Name</div>
-                    <input type="text" name="full-name" placeholder="E.g. Shudipto Ovi Sami" class="input-responsive" required>
+                    <input type="text" name="full-name" placeholder="E.g. Shudipto /Ovi /Sami" class="input-responsive" required>
 
                     <div class="order-label">Phone Number</div>
                     <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
@@ -115,7 +115,7 @@
                     $qty = $_POST['qty'];
 
                     $total = $price * $qty; // total = price x qty 
-
+                    
                     $order_date = date("Y-m-d h:i:sa"); //Order DAte
 
                     $status = "Ordered";  // Ordered, On Delivery, Delivered, Cancelled

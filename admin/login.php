@@ -40,7 +40,7 @@
             </form>
             <!-- Login Form Ends HEre -->
 
-            <p class="text-center">Created By - <a href="www.thundergod.com">Shudipto Ovi Sami</a></p>
+            <p class="text-center">Created By - <a href="https://shudiptas-portfolio.netlify.app/">Shudipto Ovi Sami</a></p>
         </div>
 
     </body>

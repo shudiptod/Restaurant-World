@@ -6,8 +6,6 @@
             <div class="wrapper">
                 <h1>Manage Admin</h1>
 
-                <br />
-
                 <?php 
                     if(isset($_SESSION['add']))
                     {
@@ -46,7 +44,8 @@
                     }
 
                 ?>
-                <br><br><br>
+                <hr>
+                <br>
 
                 <!-- Button to Add Admin -->
                 <a href="add-admin.php" class="btn-primary">Add Admin</a>
@@ -54,7 +53,7 @@
                 <br /><br /><br />
 
                 <table class="tbl-full">
-                    <tr>
+                    <tr class="manage-admin-table">
                         <th>S.N.</th>
                         <th>Full Name</th>
                         <th>Username</th>
@@ -93,11 +92,11 @@
                                     //Display the Values in our Table
                                     ?>
                                     
-                                    <tr>
+                                    <tr class="manage-admin-table">
                                         <td><?php echo $sn++; ?>. </td>
                                         <td><?php echo $full_name; ?></td>
                                         <td><?php echo $username; ?></td>
-                                        <td>
+                                        <td class="manage-admin-actions">
                                             <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" class="btn-primary">Change Password</a>
                                             <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary">Update Admin</a>
                                             <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" class="btn-danger">Delete Admin</a>

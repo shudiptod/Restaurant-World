@@ -1,8 +1,4 @@
-/* 
-    Author: Shudipto Avijit Samian;
-    Theme: Food Order Website Admin;
-    Version: 1.0;
-*/
+
 
 body{
     margin: 0;
@@ -28,17 +24,13 @@ body{
     clear: both;
 }
 
+ /* general styling for all admin tables  */
+
 .tbl-full{
     width: 100%;
     
 }
-.tbl-full tr{
-    display: grid;
-    grid-template-columns: 40px repeat(11,100px) ;
-    grid-column-gap: 10px;
-    margin-bottom: 10px;
-    
-}
+
 .tbl-full tr th, .tbl-full tr td{
     text-align: center;
     
@@ -59,6 +51,58 @@ table tr th{
 
 table tr td{
     padding: 1%;
+}
+
+/* manage order page  */
+
+.manager-order{
+    display: grid;
+    grid-template-columns: 40px repeat(11,100px) ;
+    grid-column-gap: 10px;
+    margin-bottom: 10px;    
+}
+
+
+/* manage food  */
+.manage-food{
+    display: grid;
+    grid-template-columns: repeat(7,1fr) ;
+    grid-column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+ /* admin add category page  */
+.manage-category{
+    display: grid;
+    grid-template-columns: repeat(6,1fr) ;
+    grid-column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.space{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+
+/* manage admin page css  */
+.manage-admin-table{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-column-gap: 10px;
+    
+}
+
+.manage-admin-actions{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    font-size: small;
+    
+}
+.manage-admin-actions a{
+    margin: 5px;
 }
 
 .btn-primary{
@@ -113,13 +157,19 @@ table tr td{
     display: inline;
     padding: 1%;
 }
-.menu ul li a{
+/* .menu .wrapper ul li a{
     text-decoration: none;
     font-weight: bold;
-    color: #ff6b81;
+    color: #dc3914;
+} */
+
+.menu-items{
+    text-decoration: none;
+    font-weight: bold;
+    color: #dc3914;
 }
-.menu ul li a:hover{
-    color: #ff4757;
+.menu-items:hover{
+    color: rgb(0, 0, 0);
 }
 
 /* CSS for main-content */
@@ -140,7 +190,7 @@ table tr td{
 /* CSS for Footer */
 .footer{
     width: 100%;
-    background-color: crimson;
+    background-color: #dc3914;
     color: white;
     margin-top: auto;
     bottom: 0;

@@ -45,7 +45,7 @@
                 ?>
 
                 <table class="tbl-full">
-                    <tr>
+                    <tr class="manage-food">
                         <th>S.N.</th>
                         <th>Title</th>
                         <th>Price</th>
@@ -83,7 +83,7 @@
                                 $active = $row['active'];
                                 ?>
 
-                                <tr>
+                                <tr class="manage-food">
                                     <td><?php echo $sn++; ?>. </td>
                                     <td><?php echo $title; ?></td>
                                     <td>$<?php echo $price; ?></td>
@@ -106,7 +106,7 @@
                                     </td>
                                     <td><?php echo $featured; ?></td>
                                     <td><?php echo $active; ?></td>
-                                    <td>
+                                    <td class="manage-admin-actions">
                                         <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>" class="btn-secondary">Update Food</a>
                                         <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Food</a>
                                     </td>
